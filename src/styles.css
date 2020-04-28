@@ -5,3 +5,11 @@
 .pointer {
     cursor: pointer;
 }
+
+.imgRedonda {
+    max-width: 46px;
+    max-height: 46px;
+    border-radius: 23px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

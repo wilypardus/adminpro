@@ -5,6 +5,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { DashboardMenuComponent } from './dashboard-menu/dashboard-menu.component';
+
+
 
 
 @NgModule({
@@ -13,13 +16,16 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    NopagefoundComponent
+    DashboardMenuComponent,
+    NopagefoundComponent,
   ],
   exports: [
     HeaderComponent,
     SidebarComponent,
     BreadcrumbsComponent,
-    NopagefoundComponent
+    DashboardMenuComponent,
+    NopagefoundComponent,
+
   ],
   providers: [],
 })

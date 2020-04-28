@@ -34,7 +34,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    init_plugins();
+    // init_plugins();
 
     this.forma=new FormGroup({
       nombre:new FormControl(null, Validators.required),

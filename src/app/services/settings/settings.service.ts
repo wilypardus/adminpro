@@ -30,12 +30,12 @@ export class SettingsService {
   }
 
   aplicarTema(tema:string){
-    let url=`assets/css/colors/${tema}.css`
-    this._document.getElementById('tema').setAttribute('href',url);
+    // let url=`assets/css/colors/${tema}.css`
+    // this._document.getElementById('tema').setAttribute('href',url);
 
-    this.ajustes.tema=tema;
-    this.ajustes.temaUrl=url;
-    this.guardarAjustes();
+    // this.ajustes.tema=tema;
+    // this.ajustes.temaUrl=url;
+    // this.guardarAjustes();
 
 
   }

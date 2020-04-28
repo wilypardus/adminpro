@@ -1,0 +1,5 @@
+<mat-paginator [length]="length" [pageSize]="page_size" [pageSizeOptions]="pageSizeOptions" (page)="handlePage($event)"></mat-paginator>
+
+<ul>
+    <li *ngFor="let item of this.items | paginate:page_size:page_number ">{{item.nombre}}</li>
+</ul>

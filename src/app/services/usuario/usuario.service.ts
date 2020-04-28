@@ -17,6 +17,7 @@ export class UsuarioService {
 
   usuario:Usuario;
   token:string;
+  usuarioImg:string;
 
 
   constructor(
@@ -56,7 +57,7 @@ logout(){
 
   localStorage.removeItem('token');
   localStorage.removeItem('usuario');
-  this.router.navigate(['/login']);
+  this.router.navigate(['/pages']);
 
 }
 
@@ -83,10 +84,29 @@ logout(){
     return this.http.post(url,usuario).pipe(
           map((resp:any)=>{
 
-          this.guardarStorage( resp.id,resp.token,resp.usuario)
+          this.guardarStorage( resp.id,resp.token,resp.usuario);
 
           return true;
           }));
+  }
+
+  obtenerDatos(){
+    let token=localStorage.getItem('token');
+    let url=URL_SERVICIOS+'/usuario/obt/?token='+token;
+
+
+    return this.http.get(url);
+
+
+  }
+  obtenerDatosId(id:any){
+
+    let url=URL_SERVICIOS+'/usuario/ob';
+
+
+    return this.http.get(url,id);
+
+
   }
 
 
